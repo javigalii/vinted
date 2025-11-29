@@ -66,7 +66,12 @@ require_once "funciones.php";
             echo "        <p class='card-text text-secondary fw-bold mb-3'>$precio €</p>";
             echo "      </div>";
             echo "      <div class='d-grid gap-2'>";
-            echo "        <a href='megusta.php?id=$id' class='btn btn-outline-danger w-100 rounded-0'>❤️ Me gusta</a>";
+            if (isset($_SESSION["megusta"][$id])) {
+                echo " <button type='button' class='btn btn-secondary w-100 rounded-0' disabled>❤️ Guardado</button>";
+            } else {
+                echo " <a href='accion_megusta.php?id=$id' class='btn btn-outline-danger w-100 rounded-0'>❤️ Me gusta</a>";
+            }
+
             echo "        <a href='$urlDetalle' class='btn btn-outline-dark w-100 rounded-0'>Ver detalles</a>";
             echo "      </div>";
             echo "    </div>";
