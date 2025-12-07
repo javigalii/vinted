@@ -1,5 +1,6 @@
 # VintedClone 🛍️
 
+Para ver el pryecto busca en tu navegador [telosabes](https://telosabes.com/javi/vinted/)
 Un marketplace de compraventa de artículos de segunda mano desarrollado en **PHP nativo**.  
 Este proyecto replica las funcionalidades básicas de plataformas como Vinted, permitiendo a los usuarios registrarse, publicar productos y realizar compras simuladas.
 
